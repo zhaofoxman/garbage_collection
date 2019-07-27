@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2c2c2c",
+    "navigationBarTitleText": "垃圾分类",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "usingComponents": {},
+  "networkTimeout": {
+    "request": 120000,
+    "connectSocket": 120000,
+    "uploadFile": 120000,
+    "downloadFile": 120000
+  },
+  "sitemapLocation": "sitemap.json",
+  "navigateToMiniProgramAppIdList": [
+    "wxdeef7f217006337a",
+    "wxc36c7d033d85e208",
+    "wxc56c43034f7e95fc",
+    "wx5362944eeff84062",
+    "wxd7d71584b3f0bf75",
+    "wx8249dcff0151763d",
+    "wx9a54a61435564399",
+    "wx6b9a947df3a8c86d"
+  ]
+}

@@ -1,0 +1,86 @@
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-black" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <image class="gif-wave" mode="scaleToFill" src="/images/wave.gif"></image>
+    <navigator class='action' open-type="navigate" delta="1" hover-class="none" target="miniProgram" app-id="wxc36c7d033d85e208">
+      <text class='icon-back'></text> 更多
+    </navigator>
+  </view>
+</view>
+
+<view class="cu-bar margin-top-xl">
+  <view class="search-form round">
+    <text class="icon-search"></text>
+    <input name="name" placeholder='搜垃圾名称' bindfocus="focusInput" value="{{name}}" maxlength="10" confirm-type="search" bindconfirm="queryGarbage"></input>
+    <text class="icon-camera {{ui==1?'':'hide'}}" bindtap="tapCamera"></text>
+  </view>
+</view>
+<view class="cu-bar {{ui?'hide':''}}">
+  <text class="txt-center">或者</text>
+</view>
+<view class="cu-bar {{ui?'hide':''}}">
+  <view class="round btn-camera" bindtap="tapCamera">
+    <text class="icon-camera"></text>
+  </view>
+</view>
+<view class="cu-bar {{ui?'hide':''}} minheight">
+  <text class="txt-center">拍照识别</text>
+</view>
+<view class="cu-bar {{ui==2?'':'hide'}} padding-sm">
+  <camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;display:{{ui==2?'block':'none'}}" wx:if="{{ui==2}}">
+    <cover-view>
+      <cover-image class="coverimg" src="/images/ex/garbage/camera.png" bindtap="takePhoto"/>
+    </cover-view>
+  </camera>
+</view>
+<!--分类描述图-->
+<view class="cu-bar {{ui?'hide':''}}">
+  <!--分享-->
+  <button class="cu-btn btn-share" open-type='share'>
+    <image src="/images/ex/garbage/tool-ex.png" mode="widthFix"></image>
+  </button>
+</view>
+<!--可能的垃圾列表-->
+<view class="cu-list grid col-3 margin-top {{ui?'':'hide'}}" wx:if="{{garbageList}}">
+  <block wx:for="{{garbageList}}" wx:key>
+  <view class="cu-item">
+    <text class="categroy-{{item.categroy}}" bindtap='showCateModal' data-categroy="{{item.categroy}}"></text>
+    <text class="txt-name">{{item.name}}</text>
+  </view>
+  </block>
+</view>
+
+<!--拍照智能识别照片-->
+<view class="cu-modal {{photoShow?'show':''}}">
+  <view class="cu-dialog">
+    <image src="{{photo}}" mode="widthFix" style="width:100%">
+      <view class="cu-bar justify-end text-white photo-close">
+        <view class='action' bindtap='hidePhotoModal'>
+          <text class='icon-close '></text>
+        </view>
+      </view>
+    </image>
+    <view class="cu-list margin-top">请点击一项垃圾？</view>
+    <view class="cu-list grid col-3">
+      <block wx:for="{{aipList}}" wx:key>
+      <view class="cu-item" bindtap='takePhotoInput' data-keyword="{{item.keyword}}">
+        <text class="txt-name">{{item.keyword}}</text>
+      </view>
+      </block>
+    </view>
+  </view>
+</view>
+
+<!--垃圾分类图-->
+<view class="cu-modal {{cateShow?'show':''}}">
+  <view class="cu-dialog">
+    <image src="/images/ex/garbage/categroy{{cateShow}}.jpg" mode='widthFix'>
+      <view class="cu-bar justify-end text-black pos-t-r">
+        <view class='action' bindtap='hideCateModal'>
+          <text class='icon-close'></text>
+        </view>
+      </view>
+    </image>
+  </view>
+</view>
+
+<ad unit-id="adunit-df01a98f602d71b7"></ad>
