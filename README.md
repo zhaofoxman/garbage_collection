@@ -5,7 +5,7 @@
 > 特别鸣谢：[weilanwl](https://github.com/weilanwl/ColorUI "weilanwl")提供的ColorUI库，[alexayan](https://github.com/alexayan/garbage-classification-data "alexayan")提供的垃圾分类初始数据
 
 ## 项目展示
-[![](https://github.com/MagicLon/garbage_collection/tree/master/images/1.jpg)](https://github.com/MagicLon/garbage_collection "垃圾分类投放指导") ![](https://github.com/MagicLon/garbage_collection/tree/master/images/a.jpg) ![](https://github.com/MagicLon/garbage_collection/tree/master/images/b.jpg)
+[![](https://raw.githubusercontent.com/MagicLon/garbage_collection/master/images/1.jpg)](https://github.com/MagicLon/garbage_collection "垃圾分类投放指导") ![](https://raw.githubusercontent.com/MagicLon/garbage_collection/master/images/a.jpg) ![](https://raw.githubusercontent.com/MagicLon/garbage_collection/master/images/b.jpg)
 
 ## 使用步骤
 * download 或 git clone本项目
@@ -19,4 +19,4 @@
 ## 已集成项目
 若您已将本项目代码集成到您的项目中，可联系我在此处展示
 
-![芝麻小工具](https://github.com/MagicLon/garbage_collection/tree/master/images/p1.jpg)
+![芝麻小工具](https://raw.githubusercontent.com/MagicLon/garbage_collection/master/images/p1.jpg)
