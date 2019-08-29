@@ -14,7 +14,7 @@
 * 测试发布
 
 ## 项目体验
-[<img src="https://raw.githubusercontent.com/magic3lon/garbage_collection/master/images/1.jpg" width="120px" height="120px">](https://github.com/magic3lon/garbage_collection "垃圾分类投放指导")
+[<img src="https://raw.githubusercontent.com/magic3lon/garbage_collection/master/images/1.jpg" width="120px" height="120px">](https://github.com/magic3lon/garbage_collection "垃圾分类投放指导") [<img src="https://raw.githubusercontent.com/magic3lon/garbage_collection/master/images/2.jpg" width="120px" height="120px">](https://github.com/magic3lon/garbage_collection "垃圾分类手册")
 
 ## 已集成项目
 若您已将本项目代码集成到您的项目中，可联系我在此处展示
